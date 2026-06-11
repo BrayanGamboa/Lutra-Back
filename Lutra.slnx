@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Lutra.Api/Lutra.Api.csproj" />
+  <Project Path="Lutra.Application/Lutra.Application.csproj" />
+  <Project Path="Lutra.Domain/Lutra.Domain.csproj" />
+  <Project Path="Lutra.Infrastructure/Lutra.Infrastructure.csproj" />
+</Solution>

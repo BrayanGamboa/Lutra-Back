@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lutra.Domain\Lutra.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Notifications\Ports\" />
+    <Folder Include="Notifications\UseCases\" />
+    <Folder Include="Inventory\Ports\" />
+    <Folder Include="Inventory\UseCases\" />
+    <Folder Include="Products\UseCases\" />
+    <Folder Include="Products\Ports\" />
+    <Folder Include="Customers\Ports\" />
+    <Folder Include="Customers\UseCases\" />
+    <Folder Include="Sales\Ports\" />
+    <Folder Include="Sales\UseCases\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
