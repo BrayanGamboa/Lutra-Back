@@ -1,0 +1,16 @@
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.sourcelink.json
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\bin\Debug\net10.0\Lutra.Application.deps.json
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\bin\Debug\net10.0\Lutra.Application.dll
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\bin\Debug\net10.0\Lutra.Application.pdb
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\bin\Debug\net10.0\Lutra.Domain.dll
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\bin\Debug\net10.0\Lutra.Domain.pdb
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Ap.6C0AF13B.Up2Date
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.dll
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\refint\Lutra.Application.dll
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\Lutra.Application.pdb
+C:\Users\Usuario\Documents\Proyectos\Lutra\Lutra-Back\Lutra.Application\obj\Debug\net10.0\ref\Lutra.Application.dll

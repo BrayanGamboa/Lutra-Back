@@ -8,6 +8,5 @@ namespace Lutra.Application.Auth.Ports
     public interface ITokenManager
     {
         string GenerateToken(User user);
-        Task<User> ValidateToken(string token);
     }
 }

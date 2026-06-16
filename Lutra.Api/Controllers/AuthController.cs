@@ -1,5 +1,5 @@
 ﻿using Lutra.Application.Auth.UseCases.Login;
-using Microsoft.AspNetCore.Identity.Data;
+using Lutra.Application.Auth.UseCases.Register;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lutra.Api.Controllers;

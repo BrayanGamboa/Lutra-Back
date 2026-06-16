@@ -4,5 +4,5 @@ using System.Text;
 
 namespace Lutra.Application.Auth.UseCases.Login
 {
-    public record LoginResponse(string Token, string Username, string Role);
+    public record LoginResponse(string Token, string Username);
 }

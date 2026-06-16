@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "Lutra.Domain/1.0.0": {
@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brayan Gamboa\\.nuget\\packages\\": {},
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Application\\Lutra.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Application\\Lutra.Application.csproj",
       "projectName": "Lutra.Application",
-      "projectPath": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Application\\Lutra.Application.csproj",
-      "packagesPath": "C:\\Users\\Brayan Gamboa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Application\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Application\\Lutra.Application.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Brayan Gamboa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -56,10 +56,11 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj": {
-              "projectPath": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj"
+            "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj"
             }
           }
         }
@@ -78,6 +79,7 @@
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "imports": [
           "net461",

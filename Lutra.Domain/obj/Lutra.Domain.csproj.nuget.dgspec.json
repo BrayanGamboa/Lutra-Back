@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj": {
+    "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj",
         "projectName": "Lutra.Domain",
-        "projectPath": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj",
-        "packagesPath": "C:\\Users\\Brayan Gamboa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brayan Gamboa\\source\\repos\\Proyecto Lutra\\Lutra-Back\\Lutra.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\Lutra.Domain.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\Lutra\\Lutra-Back\\Lutra.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Brayan Gamboa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -48,6 +49,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",

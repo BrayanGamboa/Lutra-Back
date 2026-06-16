@@ -32,8 +32,8 @@ public class LoginUseCase
         if (!_passwordHasher.Verify(request.Password, user.PasswordHash))
             throw new DomainException("Credenciales inválidas");
 
-        var token = _tokenManager.Generate(user);
+        var token = _tokenManager.GenerateToken(user);
 
-        return new LoginResponse(token, user.Username, user.Role);
+        return new LoginResponse(token, user.Username);
     }
 }

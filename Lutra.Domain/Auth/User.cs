@@ -12,7 +12,6 @@ public class User
     public string PasswordHash { get; private set; }
     public string Name { get; private set; }
     public string LastName { get; private set; }
-    public string Role { get; private set; }
     public DateTime? CreatedAt { get; private set; }
     public DateTime? UpdatedAt { get; private set; }
     public DateTime? LastLoginAt { get; private set; }
@@ -32,7 +31,6 @@ public class User
             PasswordHash = passwordHash,
             Name = name,
             LastName = lastName,
-            Role = role,
             IsActive = true,
             CreatedAt = DateTime.UtcNow
         };

@@ -1,55 +1,53 @@
-# Prerequisites
-*.d
+## #######################################################################
+## .gitignore para C# y .NET
+## #######################################################################
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# --- Salidas de compilación (Artifacts) ---
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+out/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# --- Archivos de configuración de usuario y caché de Visual Studio ---
+.vs/
+.vscode/
+.idea/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
 
-# Precompiled Headers
-*.gch
-*.pch
+# --- Secretos y configuraciones locales (¡Muy Importante!) ---
+# Ignora las configuraciones locales de desarrollo para no subir contraseñas o Keys.
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+.env
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# --- Paquetes NuGet ---
+*.nupkg
+# La carpeta global de paquetes (si se restaura localmente en el proyecto)
+packages/
+# Archivos de caché y logs de NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# --- Archivos de Base de Datos locales ---
+*.mdf
+*.ldf
+*.sdf
+*.db
+*.sqlite
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+# --- Archivos de depuración y diagnóstico ---
 *.pdb
+*.log
+*.crash
+*.dump
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
