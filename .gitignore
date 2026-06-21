@@ -1,53 +1,31 @@
-## #######################################################################
-## .gitignore para C# y .NET
-## #######################################################################
-
-# --- Salidas de compilación (Artifacts) ---
-bin/
-obj/
-[Bb]in/
-[Oo]bj/
+# Build
+**/bin/
+**/obj/
 out/
 
-# --- Archivos de configuración de usuario y caché de Visual Studio ---
+# VS / IDE
 .vs/
 .vscode/
 .idea/
 *.user
-*.userosscache
-*.sln.docstates
 *.suo
-*.userprefs
 
-# --- Secretos y configuraciones locales (¡Muy Importante!) ---
-# Ignora las configuraciones locales de desarrollo para no subir contraseñas o Keys.
+# Secrets
 appsettings.Development.json
 appsettings.Local.json
-secrets.json
 .env
+secrets.json
 
-# --- Paquetes NuGet ---
+# NuGet
 *.nupkg
-# La carpeta global de paquetes (si se restaura localmente en el proyecto)
 packages/
-# Archivos de caché y logs de NuGet
-project.lock.json
-project.fragment.lock.json
 artifacts/
 
-# --- Archivos de Base de Datos locales ---
-*.mdf
-*.ldf
-*.sdf
-*.db
-*.sqlite
-
-# --- Archivos de depuración y diagnóstico ---
-*.pdb
+# Logs / debug
 *.log
-*.crash
+*.pdb
 *.dump
 
-# --- Sistema Operativo ---
+# OS
 .DS_Store
 Thumbs.db
