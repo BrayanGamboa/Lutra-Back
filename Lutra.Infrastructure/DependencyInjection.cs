@@ -17,8 +17,10 @@ public static class DependencyInjection
         services.AddDbContext<AppDbContext>(options => options.UseNpgsql(connectionString));
 
         services.AddScoped<IUserRepository, EfUserRepository>();
+        services.AddScoped<IRoleRepository, EfRoleRepository>();
         services.AddScoped<ITokenManager, JwtTokenManager>();
         services.AddSingleton<IPasswordHasher, BcryptPasswordHasher>();
+        services.AddScoped<IRoleUsersDetailRepository, EfRoleUsersDetailRepository>();
 
         return services;
     }
