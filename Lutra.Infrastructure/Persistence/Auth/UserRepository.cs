@@ -14,8 +14,8 @@ public class EfUserRepository : IUserRepository
     public async Task<User?> GetByUsernameAsync(string username) =>
         await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
 
-    public async Task<User?> GetByEmailAsync(string email) =>
-        await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+    public async Task<User?> GetByEmailOrUserIdAsync(string email, Guid? userId) =>
+        await _context.Users.FirstOrDefaultAsync(u => u.Email == email || u.UserId == userId);
 
     public async Task<bool> ExistAsync(string email, string username) =>
         await _context.Users.AnyAsync(u => u.Email == email || u.Username == username);

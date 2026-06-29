@@ -1,8 +1,8 @@
 ﻿using Lutra.Application.Auth.Ports;
-using Lutra.Domain.Auth;
 using Lutra.Domain.Shared;
 
 namespace Lutra.Application.Auth.UseCases.Register;
+
 public class RegisterUseCase
 {
     private readonly IUserRepository _userRepository;
@@ -16,26 +16,26 @@ public class RegisterUseCase
         _passwordHasher = passwordHasher;
     }
 
-    public async Task<RegisterResponse> ExecuteAsync(RegisterRequest request)
+    public async Task<UserResponse> ExecuteAsync(RegisterRequest request)
     {
         var userExists = await _userRepository.ExistAsync(request.Email, request.Username);
 
-        if (userExists) {
+        if (userExists)
+        {
             throw new DomainException("El usuario ya existe");
-                    }
+        }
 
         var hashedPassword = _passwordHasher.Hash(request.Password);
 
-        var user = User.Create(
+        var user = Domain.Auth.User.Create(
             request.Username,
             request.Email,
             hashedPassword,
             request.Name,
-            request.LastName,
-            RoleEnum.User.ToString()
+            request.LastName
         );
         await _userRepository.AddAsync(user);
 
-        return new RegisterResponse(user);
+        return UserResponse.FromDomain(user);
     }
 }
