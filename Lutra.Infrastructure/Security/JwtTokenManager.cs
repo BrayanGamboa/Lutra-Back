@@ -14,16 +14,19 @@ public class JwtTokenManager : ITokenManager
 
     public JwtTokenManager(IConfiguration config) => _config = config;
 
-    public string GenerateToken(User user)
+    public string GenerateToken(User user, IEnumerable<string> roles)
     {
         var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(_config["Jwt:Secret"]!));
 
-        var claims = new[]
+        var claims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
             new Claim(ClaimTypes.Name, user.Username)
         };
+
+        foreach (var rol in roles)
+            claims.Add(new Claim(ClaimTypes.Role, rol));
 
         var token = new JwtSecurityToken(
             issuer: _config["Jwt:Issuer"],

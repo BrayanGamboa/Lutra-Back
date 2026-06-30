@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Lutra.Application.Auth.UseCases.RoleUsersDetail;
 
 namespace Lutra.Application.Auth.UseCases.Login
 {
-    public record LoginResponse(string Token, string Username);
+    public record LoginResponse(string Token, RoleUsersDetailResponse User);
 }
