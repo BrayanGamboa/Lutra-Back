@@ -1,8 +1,6 @@
 ﻿using Lutra.Application.Auth.Ports;
+using Lutra.Application.Auth.UseCases.RoleUsersDetail;
 using Lutra.Domain.Shared;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lutra.Application.Auth.UseCases.Login;
 public class LoginUseCase
@@ -10,15 +8,18 @@ public class LoginUseCase
     private readonly IUserRepository _userRepository;
     private readonly ITokenManager _tokenManager;
     private readonly IPasswordHasher _passwordHasher;
+    private readonly RoleUsersDetailUseCase _roleUsersDetailRepository;
 
     public LoginUseCase(
         IUserRepository userRepository,
         ITokenManager tokenManager,
-        IPasswordHasher passwordHasher)
+        IPasswordHasher passwordHasher,
+        RoleUsersDetailUseCase roleUsersDetailUseCase)
     {
         _userRepository = userRepository;
         _tokenManager = tokenManager;
         _passwordHasher = passwordHasher;
+        _roleUsersDetailRepository = roleUsersDetailUseCase;
     }
 
     public async Task<LoginResponse> ExecuteAsync(LoginRequest request)
@@ -32,8 +33,11 @@ public class LoginUseCase
         if (!_passwordHasher.Verify(request.Password, user.PasswordHash))
             throw new DomainException("Credenciales inválidas");
 
-        var token = _tokenManager.GenerateToken(user);
+        var userWithRol = await _roleUsersDetailRepository.GetRoleUsersDetailAsync(user.UserId);
+        var roleNames = userWithRol.Roles.Select(r => r.Name).ToList();
 
-        return new LoginResponse(token, user.Username);
+        var token = _tokenManager.GenerateToken(user, roleNames);
+
+        return new LoginResponse(token, userWithRol);
     }
 }

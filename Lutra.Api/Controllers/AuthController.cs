@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Lutra.Api.Controllers;
 
 [ApiController]
+[Tags("Autenticación y roles")]
 [Route("api/auth")]
 public class AuthController : ControllerBase
 {
