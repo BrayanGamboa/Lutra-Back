@@ -1,6 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Notifications\**" />
+    <EmbeddedResource Remove="Notifications\**" />
+    <None Remove="Notifications\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Lutra.Domain\Lutra.Domain.csproj" />
   </ItemGroup>
 
@@ -9,8 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Notifications\Ports\" />
-    <Folder Include="Notifications\UseCases\" />
     <Folder Include="Inventory\Ports\" />
     <Folder Include="Inventory\UseCases\" />
     <Folder Include="Products\UseCases\" />

@@ -7,10 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Customers\" />
+    <Compile Remove="Customers\**" />
+    <Compile Remove="Notifications\**" />
+    <Compile Remove="Products\**" />
+    <EmbeddedResource Remove="Customers\**" />
+    <EmbeddedResource Remove="Notifications\**" />
+    <EmbeddedResource Remove="Products\**" />
+    <None Remove="Customers\**" />
+    <None Remove="Notifications\**" />
+    <None Remove="Products\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Inventory\" />
-    <Folder Include="Notifications\" />
-    <Folder Include="Products\" />
     <Folder Include="Sales\" />
   </ItemGroup>
 
